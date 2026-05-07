@@ -1,0 +1,153 @@
+.manage-bookings {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  background: var(--gray-light);
+  padding: 4px;
+  border-radius: 12px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+  color: var(--gray);
+}
+
+.tab:hover {
+  color: var(--dark);
+}
+
+.tab.active {
+  background: white;
+  color: var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--gray);
+  font-size: 1.1rem;
+}
+
+.bookings-admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.booking-admin-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.booking-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.booking-admin-header h3 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+.booking-admin-user {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.booking-admin-details {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+  color: var(--dark);
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.booking-admin-price {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.slip-link {
+  margin-bottom: 12px;
+}
+
+.slip-link a {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.booking-admin-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.btn-approve {
+  flex: 1;
+  padding: 12px;
+  background: var(--success);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-approve:hover {
+  background: #1B5E20;
+}
+
+.btn-reject {
+  flex: 1;
+  padding: 12px;
+  background: white;
+  color: var(--danger);
+  border: 2px solid var(--danger);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-reject:hover {
+  background: var(--danger);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .filter-tabs {
+    flex-wrap: wrap;
+  }
+  .tab {
+    flex: none;
+    min-width: calc(50% - 4px);
+  }
+}

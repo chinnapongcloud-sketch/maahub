@@ -1,0 +1,65 @@
+:root {
+  --primary: #D32F2F;
+  --primary-dark: #B71C1C;
+  --primary-light: #EF5350;
+  --white: #FFFFFF;
+  --off-white: #FAFAFA;
+  --gray-light: #F5F5F5;
+  --gray: #9E9E9E;
+  --dark: #212121;
+  --success: #2E7D32;
+  --warning: #F57F17;
+  --danger: #C62828;
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(211, 47, 47, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--off-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+.loading-text {
+  text-align: center;
+  color: var(--gray);
+  font-size: 1.1rem;
+  padding: 60px 20px;
+}

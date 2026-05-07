@@ -1,0 +1,174 @@
+.field-detail {
+  min-height: 100vh;
+}
+
+.field-detail.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px 20px;
+}
+
+.detail-hero {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.detail-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.6));
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  background: white;
+}
+
+.detail-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+}
+
+.detail-header h1 {
+  font-size: 2rem;
+  margin: 0 0 12px;
+  color: var(--dark);
+}
+
+.detail-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.detail-desc {
+  font-size: 1rem;
+  color: var(--gray);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.facilities-section {
+  margin-top: 40px;
+}
+
+.facilities-section h3 {
+  font-size: 1.2rem;
+  margin: 0 0 16px;
+  color: var(--dark);
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.facility-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--gray-light);
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.facility-icon {
+  color: var(--success);
+  font-weight: bold;
+}
+
+.price-card {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  position: sticky;
+  top: 100px;
+}
+
+.price-amount-large {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.price-unit {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.available-slots {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.available-slots h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.mini-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.mini-slot {
+  padding: 4px 10px;
+  background: #E8F5E9;
+  color: var(--success);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.mini-slot.booked {
+  background: #f5f5f5;
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+@media (max-width: 900px) {
+  .detail-content {
+    grid-template-columns: 1fr;
+  }
+  .price-card {
+    position: static;
+  }
+}

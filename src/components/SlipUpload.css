@@ -1,0 +1,64 @@
+.slip-upload {
+  width: 100%;
+}
+
+.upload-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.upload-area {
+  border: 2px dashed var(--gray);
+  border-radius: var(--radius);
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-light);
+}
+
+.upload-area:hover,
+.upload-area.dragging {
+  border-color: var(--primary);
+  background: #FFF5F5;
+}
+
+.upload-area.has-preview {
+  padding: 8px;
+}
+
+.upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.upload-area p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.upload-hint {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.slip-preview {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  object-fit: contain;
+}
